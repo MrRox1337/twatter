@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "65b9e750dd7595b407e34b82"
+  },
+  "username": "John123",
+  "name": "John",
+  "content": "This is my first post!",
+  "likes": 0
+},
+{
+  "_id": {
+    "$oid": "65bca33e304f3f8d0a1c44e1"
+  },
+  "username": "jack96",
+  "name": "Jack",
+  "content": "This is my first post too! Who would've guessed!",
+  "likes": 0
+},
+{
+  "_id": {
+    "$oid": "66279c4bfaa0d0408569ac73"
+  },
+  "username": "M00983641",
+  "name": "Aman Mishra",
+  "content": "Hey I've been thinking, I've been searching!!",
+  "likes": 2
+}]

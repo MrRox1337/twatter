@@ -1,0 +1,118 @@
+[{
+  "_id": {
+    "$oid": "65b09babded0c7e10d1018b3"
+  },
+  "username": "jane123",
+  "name": "Jane",
+  "password": "jane12345",
+  "phone": {
+    "$numberLong": "971552326969"
+  },
+  "email": "jane@mail.com"
+},
+{
+  "_id": {
+    "$oid": "65bca1c0304f3f8d0a1c44dc"
+  },
+  "username": "jack96",
+  "name": "Jack",
+  "password": "jackywhacky",
+  "phone": {
+    "$numberLong": "971552496729"
+  },
+  "email": "jack96@mail.com"
+},
+{
+  "_id": {
+    "$oid": "65e6c54310178071461e51ed"
+  },
+  "username": "M00983641",
+  "name": "Aman the Mishra",
+  "password": "root",
+  "phone": {
+    "$numberLong": "971551528861"
+  },
+  "email": "M00983641@studentmdx.ac"
+},
+{
+  "_id": {
+    "$oid": "662768d03efc335f4c39aec0"
+  },
+  "phone": {
+    "$numberLong": "384579890757"
+  },
+  "email": "vejsjma2de@.com",
+  "username": "xzj59tfr1qf",
+  "name": "v583qol5wnj",
+  "password": ""
+},
+{
+  "_id": {
+    "$oid": "662769af86707d82cbbceda8"
+  },
+  "phone": {
+    "$numberLong": "889504346467"
+  },
+  "email": "5xoqi0pfcdk@.com",
+  "username": "wwaqr90d5r",
+  "name": "th7jzk5l6vb",
+  "password": ""
+},
+{
+  "_id": {
+    "$oid": "662769f6f58b649a6540a432"
+  },
+  "phone": {
+    "$numberLong": "126597025816"
+  },
+  "email": "812nn1ynbjo@.com",
+  "username": "4grvqocpvhq",
+  "name": "m21f582kzyl",
+  "password": ""
+},
+{
+  "_id": {
+    "$oid": "66276a12fd0a2756ac76e03a"
+  },
+  "phone": {
+    "$numberLong": "200055150017"
+  },
+  "email": "vas4w2wi91s@.com",
+  "username": "yzq5mrjw8r",
+  "name": "trxusejmmc9",
+  "password": ""
+},
+{
+  "_id": {
+    "$oid": "66276d3e50039a6cc6b86a57"
+  },
+  "phone": {
+    "$numberLong": "525774955122"
+  },
+  "email": "tfzlm44orpi@.com",
+  "username": "z6y7qlga9km",
+  "name": "tkcb4svrwd9",
+  "password": ""
+},
+{
+  "_id": {
+    "$oid": "662770a747b11e06152aa432"
+  },
+  "phone": {
+    "$numberLong": "470819513537"
+  },
+  "email": "ulxwkmgplxh@8mh.com",
+  "username": "3vt0si4cvxu",
+  "name": "n8nxda5r00g",
+  "password": "jnca6keciwh"
+},
+{
+  "_id": {
+    "$oid": "662780a522e61fcf82b834b5"
+  },
+  "username": "M00983641",
+  "name": "Aman Mishra",
+  "password": "root",
+  "phone": 551528861,
+  "email": "am3971@live.mdx.ac.uk"
+}]

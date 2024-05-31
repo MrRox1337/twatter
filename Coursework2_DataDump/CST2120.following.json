@@ -1,0 +1,28 @@
+[{
+  "_id": {
+    "$oid": "65bc9f0f304f3f8d0a1c44d2"
+  },
+  "username": "John123",
+  "followers": [
+    "jane123"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65bca162304f3f8d0a1c44d7"
+  },
+  "username": "jane123",
+  "followers": [
+    "john123",
+    "jack96"
+  ]
+},
+{
+  "_id": {
+    "$oid": "65bca36d304f3f8d0a1c44e5"
+  },
+  "username": "jane123",
+  "following": [
+    "jack96"
+  ]
+}]
