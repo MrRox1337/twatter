@@ -1,0 +1,200 @@
+/*  Aman Mishra
+    CST2120 
+    MISIS: M00983641
+    Coursework #2
+
+    This is the CSS for the social networking website. */
+
+/* General styling begins */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f5f8fa;
+}
+/* General styling ends */
+
+/* Navigation bar begins */
+header {
+	background-color: #1da1f2;
+	color: white;
+	text-align: center;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.title {
+	cursor: pointer;
+	padding: 1em 1em;
+}
+
+.search-box {
+	width: 500px;
+	margin: 2em 10px;
+}
+
+.search-box input {
+	width: 500px;
+}
+
+.user-actions {
+	display: flex;
+	align-items: center;
+}
+
+.user-actions button {
+	margin-left: 10px;
+	padding: 8px 16px;
+	background-color: #1da1f2;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	height: 100%;
+}
+
+.user-actions button:hover {
+	background-color: #0e86d4;
+}
+/* Navigation bar ends */
+
+/* Main content style begins */
+.main-content {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+
+.sidebar {
+	width: 20%;
+	background-color: #e6ecf0;
+	padding: 20px;
+}
+
+.middle-content {
+	width: 60%;
+	padding: 20px;
+	background-color: lightblue;
+}
+
+.right-column {
+	width: 20%;
+	padding: 20px;
+	background-color: #e6ecf0;
+	display: block;
+}
+/* Main content style ends */
+
+/* Sidebar style begins */
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar li {
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+/* Sidebar style ends */
+
+/* Create post style */
+.middle-content textarea {
+	width: 100%;
+	margin-bottom: 10px;
+	resize: none;
+}
+
+/* Post style begins */
+.posts {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.middle-content .posts .post {
+	border: 1px solid #6d7f8b;
+	border-radius: 8px;
+	padding: 12px;
+	margin-bottom: 16px;
+	background-color: azure;
+}
+
+.middle-content .posts .post img {
+	border-radius: 50%;
+	margin-right: 10px;
+	width: 60px;
+	background-color: aquamarine;
+}
+
+.middle-content .posts .post-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-content .posts .user {
+	font-weight: bold;
+}
+/* Post style ends */
+
+/* All 3 form style begins */
+#profile-page form,
+#register form,
+#login form {
+	text-align: center;
+}
+
+#profile-page button,
+#register button,
+#login button {
+	margin-top: 5px;
+	padding: 10px 20px;
+	background-color: #4caf50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#profile-page button:hover,
+#register button:hover,
+#login button:hover {
+	background-color: #45a049;
+}
+/* All 3 form style ends */
+
+/* Following and Followers section styles begins */
+.middle-content .user {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.middle-content .user img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 15px;
+}
+
+.middle-content .user-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.middle-content .user-info .username {
+	font-weight: bold;
+	color: #1da1f2;
+}
+
+.middle-content .user-info .name {
+	color: #6d7f8b;
+}
+
+.middle-content h2 {
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+/* Following and Followers section styles ends */

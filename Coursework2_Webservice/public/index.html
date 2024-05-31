@@ -1,0 +1,241 @@
+<!-- Name: Aman Mishra
+     MISIS: M00983641 
+     CST 2120 Coursework 2: Social Networking Website and Webservice
+     Professor: Engie Bashir
+     Date: 5/3/2024
+     Description: This is the front-end of a social networking clone of Twitter called twatter.
+                  The primary goal of this project is to showcase proper node application
+                  structure with server hosting on express servers and interaction between
+                  front and back-end using mongoDB and javascript in the business logic.-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<title>CST 2120 Coursework 2 | Twatter</title>
+	</head>
+	<body>
+		<!-- Header section starts-->
+		<!-- This region allows user account access, contains title and a search function -->
+		<header>
+			<div class="title"><h1>Twatter</h1></div>
+			<div class="search-box"><input type="text" placeholder="Search by Name"></div>
+			<div class="user-actions">
+				<button id="login-button">Login</button>
+				<button id="register-button">Register</button>
+			</div>
+		</header>
+		<!-- Header section ends -->
+
+		<!-- Main body starts -->
+		<!-- section containing sidebar and main business front-end -->
+		<div class="main-content">
+			<!-- Exploratory sidebar starts-->
+			<div class="sidebar">
+				<ul>
+					<li id="explore-tab">Explore</li>
+					<li id="home-tab">Home</li>
+					<li id="followers-tab">Followers</li>
+					<li id="following-tab">Following</li>
+					<li id="profile-tab">Profile</li>
+				</ul>
+			</div>
+			<!-- Exploratory sidebar ends -->
+
+			<!-- Explore feed starts -->
+			<!-- Contains posts from every followed user. -->
+			<div id="main-page" class="middle-content">
+				<textarea placeholder="Twat something"></textarea>
+				<button id="twatBtn">Twat!</button>
+				<div class="posts">
+					<div class="post">
+						<img src="imgs/4x.gif" alt="Profile Picture">
+						<div class="post-content">
+							<span class="user">John Doe @jodo202</span>
+							<p>This is a sample post.</p>
+						</div>
+					</div>
+
+					<div class="post">
+						<img src="imgs/jakeDrow.jpg" alt="Profile Picture">
+						<div class="post-content">
+							<span class="user">Jake Drow @jd123</span>
+							<p>This is a second explore post.</p>
+						</div>
+					</div>
+
+					<div class="post">
+						<img src="imgs/4x.gif" alt="Profile Picture">
+						<div class="post-content">
+							<span class="user">John Doe @jodo202</span>
+							<p>This is a third explore post.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Explore feed ends -->
+
+			<!-- Home feed starts -->
+			<!-- Contains every post from the logged in user -->
+			<div id="home-page" class="middle-content">
+				<div id="twat-area">
+					<textarea placeholder="Twat something..."></textarea>
+					<button id="twat-button">Twat!</button>
+				</div>
+				<div class="posts">
+					<div class="post">
+						<img src="imgs/4x.gif" alt="Profile Picture">
+						<div class="post-content">
+							<span class="user">John Doe</span>
+							<p>This is a sample homePage post.</p>
+						</div>
+					</div>
+
+					<div class="post">
+						<img src="imgs/4x.gif" alt="Profile Picture">
+						<div class="post-content">
+							<span class="user">John Doe</span>
+							<p>This is a sample homePage post.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Home feed ends -->
+
+			<!-- Followers page starts -->
+			<!-- Contains a list of all users following logged in user -->
+			<div id="followers" class="middle-content">
+				<h2>Users following you</h2>
+
+				<div class="user">
+					<img src="imgs/sample-user.png" alt="Follower Profile Picture">
+					<div class="user-info">
+						<span class="username">@follower134</span>
+						<span class="name">John Doe</span>
+					</div>
+				</div>
+
+				<div class="user">
+					<img src="imgs/jakeDrow.jpg" alt="Follower Profile Picture">
+					<div class="user-info">
+						<span class="username">@jd123</span>
+						<span class="name">Jake Drow</span>
+					</div>
+				</div>
+				<div class="user">
+					<img src="imgs/sample-user.png" alt="Follower Profile Picture">
+					<div class="user-info">
+						<span class="username">@follower1</span>
+						<span class="name">John Doe</span>
+					</div>
+				</div>
+				<div class="user">
+					<img src="imgs/sample-user.png" alt="Follower Profile Picture">
+					<div class="user-info">
+						<span class="username">@follower2</span>
+						<span class="name">John Doe</span>
+					</div>
+				</div>
+				<div class="user">
+					<img src="imgs/sample-user.png" alt="Follower Profile Picture">
+					<div class="user-info">
+						<span class="username">@follower4</span>
+						<span class="name">John Doe</span>
+					</div>
+				</div>
+			</div>
+			<!-- Followers page neds -->
+
+			<!-- Following page starts -->
+			<!-- Contains a list of all users followed by logged in user -->
+			<div id="following" class="middle-content">
+				<h2>Users you follow</h2>
+
+				<div class="user">
+					<img src="imgs/jakeDrow.jpg" alt="Follower Profile Picture">
+					<div class="user-info">
+						<span class="username">@jd123</span>
+						<span class="name">Jake Drow</span>
+					</div>
+				</div>
+			</div>
+			<!-- Following page ends -->
+
+			<!-- Login form page starts -->
+			<!-- Contains the user account access form -->
+			<div id="login" class="middle-content">
+				<form>
+					<h1>Log in to Twat!</h1>
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required><br>
+
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required><br>
+
+					<button type="submit">Go</button>
+				</form>
+			</div>
+			<!-- Login form page ends -->
+
+			<!-- Register form page starts -->
+			<!-- Contains the user account creation form -->
+			<div id="register" class="middle-content">
+				<form>
+					<h1>Create a Twatter account</h1>
+					<label for="fullName">Full Name:</label>
+					<input type="text" id="fullName" name="fullName" required><br>
+
+					<label for="phone">Phone:</label>
+					<input type="tel" id="phone" name="phone" required><br>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" required><br>
+
+					<label for="username">Username:</label>
+					<input type="text" id="regUsername" name="regUsername" required><br>
+
+					<label for="regPassword">Password:</label>
+					<input type="password" id="regPassword" name="regPassword" required><br>
+
+					<button type="submit">Register</button>
+				</form>
+			</div>
+			<!-- Register form page ends -->
+
+			<!-- Profile page starts -->
+			<!-- User can change view and change their profile information -->
+			<div id="profile-page" class="middle-content">
+				<form>
+					<h1>Edit your profile.</h1>
+					<label for="profileFullName">Full Name:</label>
+					<input type="text" id="profileFullName" name="profileFullName" required><br>
+
+					<label for="profilePhone">Phone:</label>
+					<input type="tel" id="profilePhone" name="profilePhone" required><br>
+
+					<label for="profileEmail">Email:</label>
+					<input type="email" id="profileEmail" name="profileEmail" required><br>
+
+					<label for="profileUsername">Username:</label>
+					<input type="text" id="profileUsername" name="profileUsername" required><br>
+
+					<label for="profilePassword">Password:</label>
+					<input type="password" id="profilePassword" name="profilePassword" required><br>
+
+					<label for="retypePassword">Retype Password:</label>
+					<input type="password" id="retypePassword" name="retypePassword" required><br>
+
+					<button type="submit">Save Changes</button>
+				</form>
+			</div>
+			<!-- Profile page ends -->
+
+			<div class="right-column">
+				<!-- This section is intentionally left blank. -->
+			</div>
+		</div>
+		<!-- Main body ends -->
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
